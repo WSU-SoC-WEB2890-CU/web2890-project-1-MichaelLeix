@@ -1,32 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="Project 1" />
 
-    <link rel="stylesheet" href="./stylesheets/main.scss" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Project Starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Project 1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.scss" />
+</head>
 
-  <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5 mx-auto w-75">
-      <span>
-        WEB 2890:&nbsp;
-        <i class="bi bi-filetype-html text-primary"></i>/ <i class="bi bi-filetype-css text-danger"></i>/
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
-      <span class="d-block pt-5">
-        <img src="images/logo.svg" alt="logo horizontal" />
-      </span>
-      <span class="d-block py-5">
-        Project 1: The <span class="bg-dark text-light px-5 fw-bold">CarDeal</span> project
-      </span>
-      <a href="_contents.html" class="link-primary">Link to the Contents file</a>
-    </h1>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="images/logo.svg" alt="Cardeal Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#process">How It Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#why-us">Advantages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#selling-point">Get Offer</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#recent">Recent Purchases</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <script type="module" src="./javascripts/main.js"></script>
-  </body>
+  <!-- Hero -->
+  <section id="hero" class="d-flex align-items-center text-white">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Hero Text -->
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h1 class="display-4 fw-bold">We buy <em>any</em> car.</h1>
+          <p class="lead">Get a fair price for your car without the hassle!</p>
+        </div>
+
+        <!-- Hero Form -->
+        <div class="col-lg-6">
+          <form class="row g-2 bg-dark bg-opacity-75 p-3 rounded">
+            <div class="col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Year">
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Make">
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Model">
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Zip Code">
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary w-100">Show Me My Offer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Process -->
+    <section id="process" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Selling Made Simple</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4 text-center">
+            <i class="bi bi-search fs-1 text-primary"></i>
+            <h5 class="mt-2">Step 1</h5>
+            <p>Enter your car details in the form.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="bi bi-cash-coin fs-1 text-primary"></i>
+            <h5 class="mt-2">Step 2</h5>
+            <p>Receive an instant cash offer.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="bi bi-calendar-check fs-1 text-primary"></i>
+            <h5 class="mt-2">Step 3</h5>
+            <p>Schedule a free pickup.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="bi bi-truck fs-1 text-primary"></i>
+            <h5 class="mt-2">Step 4</h5>
+            <p>We come to your location.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="bi bi-key fs-1 text-primary"></i>
+            <h5 class="mt-2">Step 5</h5>
+            <p>Hand over the keys.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="bi bi-emoji-smile fs-1 text-primary"></i>
+            <h5 class="mt-2">Step 6</h5>
+            <p>Get paid instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Advantages -->
+<section id="why-us" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4 text-center text-md-start">
+      <!-- Header -->
+      <div class="col-12 col-md-5 mb-3 mb-md-0">
+        <h2 class="mb-4">What Makes Us Different?</h2>
+        <p class="text-muted">We're not just another car buyer, we make the process fast, fair, and stress-free for every driver.</p>
+      </div>
+
+      <!-- Lists -->
+      <div class="col-12 col-md-7">
+        <div class="row justify-content-center justify-content-md-start">
+          <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-center justify-content-sm-start align-items-center">
+                <i class="bi bi-check-circle text-primary me-2"></i> Fast offers
+              </li>
+              <li class="list-group-item d-flex justify-content-center justify-content-sm-start align-items-center">
+                <i class="bi bi-check-circle text-primary me-2"></i> Free car pickup
+              </li>
+              <li class="list-group-item d-flex justify-content-center justify-content-sm-start align-items-center">
+                <i class="bi bi-check-circle text-primary me-2"></i> No hidden fees
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-center justify-content-sm-start align-items-center">
+                <i class="bi bi-check-circle text-primary me-2"></i> Fair pricing
+              </li>
+              <li class="list-group-item d-flex justify-content-center justify-content-sm-start align-items-center">
+                <i class="bi bi-check-circle text-primary me-2"></i> Any car accepted
+              </li>
+              <li class="list-group-item d-flex justify-content-center justify-content-sm-start align-items-center">
+                <i class="bi bi-check-circle text-primary me-2"></i> Instant payment
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Our Happy Sellers</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <blockquote class="blockquote">
+                <p>"Cardeal made selling my old car so easy!"</p>
+                <footer class="blockquote-footer">Sarah J.</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item text-center">
+              <blockquote class="blockquote">
+                <p>"Fast payment and hassle-free pickup."</p>
+                <footer class="blockquote-footer">Mike R.</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item text-center">
+              <blockquote class="blockquote">
+                <p>"I got a better price than the dealership."</p>
+                <footer class="blockquote-footer">Alicia K.</footer>
+              </blockquote>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Selling Point -->
+    <section id="selling-point" class="py-5 text-white text-center">
+      <div class="container">
+        <h2>Get the Best Offer for Your Car</h2>
+        <p class="mb-4">Don't waste time negotiating. Get your cash in hand today!</p>
+        <a href="#hero" class="btn btn-lg btn-primary">Get an Offer</a>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse"
+                data-bs-target="#q1">Do you buy any car?</button></h2>
+            <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, we accept all makes and models.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                data-bs-target="#q2">How fast will I get paid?</button></h2>
+            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Payments are made instantly upon pickup.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                data-bs-target="#q3">Where do I bring my car?</button></h2>
+            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">You can drive to our location, or have someone pick it up!</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+                Do you accept cars in any condition?
+              </button>
+            </h2>
+            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! We buy cars in all conditions—whether it runs perfectly, has mechanical issues, or is totaled.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">
+                Are there any hidden fees?
+              </button>
+            </h2>
+            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No hidden fees. The offer you see is the amount you'll receive—pickup and paperwork are included.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recent Purchases -->
+    <section id="recent" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Cars We've Bought Recently</h2>
+        <div class="row g-4">
+
+          <!-- Honda Civic -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img src="images/honda_civic_sedan.png" class="card-img-top" alt="2015 Honda Civic Sedan">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">2015 Honda Civic Sedan</h5>
+                <p class="card-text">Miles: 72,000 | Price: $8,500 | MPG: 32</p>
+                <p class="small text-muted">Condition: Excellent overall, well-maintained interior.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-auto">More Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hyundai Elantra -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img src="images/hyundai_elantra.png" class="card-img-top" alt="2017 Hyundai Elantra">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">2017 Hyundai Elantra</h5>
+                <p class="card-text">Miles: 54,000 | Price: $10,200 | MPG: 34</p>
+                <p class="small text-muted">Condition: Great mechanical shape, minor exterior wear.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-auto">More Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toyota 4Runner -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/toyota_4runner.png" class="card-img-top" alt="2016 Toyota 4Runner">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">2016 Toyota 4Runner</h5>
+                <p class="card-text">Miles: 88,000 | Price: $21,500 | MPG: 19</p>
+                <p class="small text-muted">Condition: Strong engine, clean interior, some exterior scratches.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-auto">More Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ford F-150 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/ford_f150_truck.png" class="card-img-top" alt="2018 Ford F-150">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">2018 Ford F-150</h5>
+                <p class="card-text">Miles: 64,000 | Price: $27,800 | MPG: 22</p>
+                <p class="small text-muted">Condition: Powerful truck, excellent towing capacity, minimal wear.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-auto">More Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ford Fusion -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/ford_fusion.png" class="card-img-top" alt="2016 Ford Fusion">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">2016 Ford Fusion</h5>
+                <p class="card-text">Miles: 81,000 | Price: $9,900 | MPG: 26</p>
+                <p class="small text-muted">Condition: Reliable sedan, comfortable interior, well-maintained.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-auto">More Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Logo / Branding -->
+        <div class="col-md-3">
+          <img src="images/logo_ver.svg" alt="Cardeal Logo" height="50" class="mb-3">
+          <p class="small mb-0">Made with coffee. © 2025 Cardeal</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h6>Contact</h6>
+          <ul class="list-unstyled small mb-0">
+            <li>Email: <a href="mailto:info@cardeal.com" class="text-white">info@cardeal.com</a></li>
+            <li>Phone: <a href="tel:5551234567" class="text-white">(555) 123-4567</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h6>Links</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a href="#hero" class="text-white">Home</a></li>
+            <li><a href="#how" class="text-white">How It Works</a></li>
+            <li><a href="#faq" class="text-white">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-3">
+          <h6>Follow Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
 </html>
